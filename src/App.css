@@ -1,17 +1,45 @@
 body { background-image: linear-gradient(rgba(255, 255, 255, 0.6)), url('../public/pictures/background.png');
     background-size: cover;
-    font-family: Georgia, 'Times New Roman', Times, serif;}
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(40, 36, 36);}
+
+button {display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: rgb(231, 151, 151);
+        color: rgb(40, 36, 36);
+        padding: 16px 22px ;
+        border: none;
+        border-radius: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);}    
+
+button:hover {
+    background-color: rgb(227, 180, 180);
+    transition: ease-in-out 150ms;
+}
 
 h1 {font-size: 40px;}
+
 h1, h2, h3{text-align: center;}
 
-ul {text-align: right;}
+h1 {margin-top: 48px;}
+
+h3 {margin: 30px;}
+
+img {width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    }
+
 li {list-style-type: none;
     display: inline;
     margin: 5px;}
+    
+ul {text-align: right;}
 
-img {width: 400px;
-     display: block;
-    margin: 0 auto;
-    border-radius: 6px;
-    }
+
