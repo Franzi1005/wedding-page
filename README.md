@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Disclaimer from me (Franzi )in case anyone ever reads this
+Im consciously using CRA in this project as the functionality and scope of this project is rather small and I would definitely consider myself a beginner. I know there are better options out there though! :-) 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
