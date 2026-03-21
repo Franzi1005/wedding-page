@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './rvspModal.css';
 import { translations, getLanguage } from '../../i18n';
 
-export default function RvspModal({ open, onClose }) {
+export default function RvspModal({ open, close }) {
   const [guestName, setGuestName] = useState('');
   const [email, setEmail] = useState('');
   const [hasPlusOne, setHasPlusOne] = useState(false);
@@ -19,7 +19,7 @@ export default function RvspModal({ open, onClose }) {
     <div className='modalBackground'>
       <div>
         <div className='modalHeader'>
-          <button onClick={onClose}>✕</button>
+          <button onClick={close}>✕</button>
         </div>
         <h2>{t.rsvpTitle}</h2>
         <form action='https://formspree.io/f/mnjgynoy' method='POST'>
@@ -58,7 +58,7 @@ export default function RvspModal({ open, onClose }) {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <input type='submit' value={t.rsvpSubmit} onSubmit={onClose} />
+          <input type='submit' value={t.rsvpSubmit} onSubmit={close} />
         </form>
       </div>
     </div>

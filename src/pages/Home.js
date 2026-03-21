@@ -23,10 +23,7 @@ export default function Home() {
         {t.rsvpButton}
       </button>
 
-      <RvspModal
-        open={isOpen}
-        onClose={() => setIsOpen(false)}
-      />
+      <RvspModal open={isOpen} close={() => setIsOpen(false)} />
     </div>
   );
 }
