@@ -27,6 +27,7 @@ export default function Heidelberg() {
               style={{ border: 0 }}
               allowFullScreen=''
               loading='lazy'
+              title='Vetters Heidelberg'
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
             <div className='restaurant-info'>
@@ -47,6 +48,7 @@ export default function Heidelberg() {
               style={{ border: 0 }}
               allowFullScreen=''
               loading='lazy'
+              title='Cenneto'
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
             <div className='restaurant-info'>
@@ -67,6 +69,7 @@ export default function Heidelberg() {
               style={{ border: 0 }}
               allowFullScreen=''
               loading='lazy'
+              title='Bhukkad Dhaba'
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
             <div className='restaurant-info'>
@@ -87,6 +90,7 @@ export default function Heidelberg() {
               style={{ border: 0 }}
               allowFullScreen=''
               loading='lazy'
+              title='Taifs'
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
             <div className='restaurant-info'>

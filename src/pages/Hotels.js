@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import L from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { translations, getLanguage } from '../i18n';
@@ -18,7 +18,8 @@ export default function Hotels() {
   });
 
   const weddingIcon = new L.Icon({
-    iconUrl: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSI0NCIgdmlld0JveD0iMCAwIDMyIDQ0Ij48cGF0aCBmaWxsPSIjZGMyNjI2IiBzdHJva2U9IiNhYTFmMWYiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTE2IDFjLTcuNyAwLTE0IDYuMy0xNCAxNHM2LjMgMTQgMTQgMTQgMTQtNi4zIDE0LTE0UzIzLjcgMSAxNiAxeiIvPjx0ZXh0IHg9IjE2IiB5PSIxOSIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPuKdpDwvdGV4dD48L3N2Zz4=',
+    iconUrl:
+      'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSI0NCIgdmlld0JveD0iMCAwIDMyIDQ0Ij48cGF0aCBmaWxsPSIjZGMyNjI2IiBzdHJva2U9IiNhYTFmMWYiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTE2IDFjLTcuNyAwLTE0IDYuMy0xNCAxNHM2LjMgMTQgMTQgMTQgMTQtNi4zIDE0LTE0UzIzLjcgMSAxNiAxeiIvPjx0ZXh0IHg9IjE2IiB5PSIxOSIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPuKdpDwvdGV4dD48L3N2Zz4=',
     iconSize: [32, 44],
     iconAnchor: [16, 44],
     popupAnchor: [0, -44],
@@ -29,7 +30,8 @@ export default function Hotels() {
       name: 'Wedding Location (Schilling Roofbar)',
       lat: 49.40674303895697,
       lng: 8.68574880839979,
-      address: 'Alte Glockengießerei 9/7. und 8. Obergeschoss, 69115 Heidelberg',
+      address:
+        'Alte Glockengießerei 9/7. und 8. Obergeschoss, 69115 Heidelberg',
       website: 'https://schillingroofbar.com/',
     },
     {
@@ -51,7 +53,8 @@ export default function Hotels() {
       lat: 49.405966188212,
       lng: 8.686087131291153,
       address: 'Rohrbacher Str. 14, 69115 Heidelberg',
-      website: 'https://www.premierinn.com/de/de/hotels/deutschland/baden-wurttemberg/heidelberg/heidelberg-city-zentrum',
+      website:
+        'https://www.premierinn.com/de/de/hotels/deutschland/baden-wurttemberg/heidelberg/heidelberg-city-zentrum',
     },
     {
       name: 'ATLANTIC Hotel Heidelberg',
@@ -79,7 +82,8 @@ export default function Hotels() {
       lat: 49.404927723460666,
       lng: 8.67438803274917,
       address: 'Kurfürsten-Anlage 1, 69115 Heidelberg',
-      website: 'https://www.intercityhotel.com/hotels/alle-hotels/deutschland/heidelberg/intercityhotel-heidelberg',
+      website:
+        'https://www.intercityhotel.com/hotels/alle-hotels/deutschland/heidelberg/intercityhotel-heidelberg',
     },
     {
       name: 'The Heidelberg Exzellenz Hotel',
@@ -93,9 +97,7 @@ export default function Hotels() {
   return (
     <div className='Hotels'>
       <h1>{t.hotelsTitle}</h1>
-      <p className='hotels-intro'>
-        {t.hotelsIntro}
-      </p>
+      <p className='hotels-intro'>{t.hotelsIntro}</p>
 
       <div className='hotels-container'>
         <div className='map-section'>
@@ -131,10 +133,16 @@ export default function Hotels() {
                 key={index}
                 className={`hotel-card ${isWeddingLocation ? 'wedding-location' : ''}`}
               >
-                {isWeddingLocation && <div className='wedding-badge'>{t.weddingVenueBadge}</div>}
+                {isWeddingLocation && (
+                  <div className='wedding-badge'>{t.weddingVenueBadge}</div>
+                )}
                 <h4>{hotel.name}</h4>
                 <p className='hotel-address'>{hotel.address}</p>
-                <a href={hotel.website} target='_blank' rel='noopener noreferrer'>
+                <a
+                  href={hotel.website}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   {t.viewWebsite}
                 </a>
               </div>
