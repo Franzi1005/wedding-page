@@ -11,7 +11,7 @@ export default function Home() {
     <div className='home'>
       <h1>{t.homeTitle}</h1>
       <img src='./pictures/CuF.jpeg' alt='Christoph and Franzi' />
-      <h2>{t.homeDate}</h2>
+      <h2 className='wedding-date'>{t.homeDate}</h2>
       <h3>{t.homeLocation}</h3>
       <p className='dressCode'>{t.homeDressCode}</p>
       <p>{t.homeAdultsOnly}</p>

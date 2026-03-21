@@ -71,6 +71,15 @@ h2{
   margin-top: 16px;
 }
 
+.wedding-date {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 h3 {
   margin: 30px;
   font-size: 18px;
@@ -250,6 +259,12 @@ nav {
     font-size: 19px;
   }
 
+  .wedding-date {
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+  }
+
   h3 {
     font-size: 17px;
     margin: 20px 15px;
@@ -291,6 +306,12 @@ nav {
 
   h2 {
     font-size: 18px;
+  }
+
+  .wedding-date {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
 
   h3 {
