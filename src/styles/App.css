@@ -3,7 +3,7 @@ body {
     linear-gradient(rgba(255, 255, 255, 0.8)),
     url('../../public/pictures/background.png');
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(135, 109, 109);
@@ -12,6 +12,13 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  position: relative;
+}
+
+html {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 * {
