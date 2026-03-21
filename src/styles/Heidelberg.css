@@ -1,0 +1,7 @@
+.heidelberg-intro{display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 50px;
+padding-right: 80px;}
+
+p{font-size: 20px;
+    line-height: 36px;}

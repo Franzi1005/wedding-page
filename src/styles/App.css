@@ -1,0 +1,89 @@
+body {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.8)),
+    url('../../public/pictures/background.png');
+  background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(135, 109, 109);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(203, 179, 179);
+  color: rgb(149, 121, 121);
+  padding: 16px 22px;
+  border: none;
+  border-radius: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: rgb(176, 158, 158);
+  transition: ease-in-out 150ms;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 550;
+  margin-top: 48px;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+h3 {
+  margin: 30px;
+  font-size: 18px;
+}
+
+img {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+  font-weight: 700;
+}
+
+li:hover{
+  color: rgb(95, 76, 76);
+  
+}
+
+p{ font-size: 16px;
+margin-bottom: 16px;
+padding: 0px 36px;}
+
+ul {
+  margin: 18px;
+  text-align: right;
+}
+
+.dressCode{text-align: center;
+}
+.home{
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+
