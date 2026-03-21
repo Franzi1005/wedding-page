@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className='home'>
       <h1>{t.homeTitle}</h1>
-      <img src='./pictures/CuF.jpeg' alt='Christoph and Franzi' />
-      <h2 className='wedding-date'>{t.homeDate}</h2>
+      <img src='./pictures/CuF6.jpg' alt='Christoph and Franzi' />
+      <h2>{t.homeDate}</h2>
       <h3>{t.homeLocation}</h3>
       <p className='dressCode'>{t.homeDressCode}</p>
       <p>{t.homeAdultsOnly}</p>
