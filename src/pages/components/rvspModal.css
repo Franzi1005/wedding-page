@@ -1,9 +1,161 @@
 .modalBackground {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: rgba(135, 109, 109, 0.6);
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modalBackground > div {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(135, 109, 109);
+}
+
+@media (max-width: 768px) {
+  .modalBackground > div {
+    padding: 30px 20px;
+    max-height: 95vh;
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.modalHeader button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(135, 109, 109);
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 150ms ease-in-out;
+  font-weight: bold;
+}
+
+.modalHeader button:hover {
+  background-color: rgba(203, 179, 179, 0.3);
+}
+
+.modalBackground form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modalBackground h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: rgb(135, 109, 109);
+}
+
+@media (max-width: 768px) {
+  .modalBackground h2 {
+    font-size: 28px;
+  }
+}
+
+.modalBackground input[type='text'],
+.modalBackground input[type='email'],
+.modalBackground input::placeholder {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.modalBackground input[type='text'],
+.modalBackground input[type='email'] {
+  padding: 12px 16px;
+  border: 2px solid rgb(203, 179, 179);
+  border-radius: 8px;
+  font-size: 16px;
+  color: rgb(135, 109, 109);
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: border-color 150ms ease-in-out;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .modalBackground input[type='text'],
+  .modalBackground input[type='email'] {
+    font-size: 16px;
+    padding: 14px 16px;
+  }
+}
+
+.modalBackground input[type='text']:focus,
+.modalBackground input[type='email']:focus {
+  outline: none;
+  border-color: rgb(176, 158, 158);
+}
+
+.modalBackground .checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modalBackground input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: rgb(176, 158, 158);
+}
+
+.modalBackground label {
+  font-size: 16px;
+  color: rgb(135, 109, 109);
+  cursor: pointer;
+}
+
+.modalBackground input[type='submit'] {
+  padding: 16px 22px;
+  background-color: rgb(215, 195, 195);
+  color: rgb(135, 109, 109);
+  border: none;
+  border-radius: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 150ms ease-in-out;
+  margin-top: 10px;
+  width: fit-content;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .modalBackground input[type='submit'] {
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+}
+
+.modalBackground input[type='submit']:hover {
+  background-color: rgb(176, 158, 158);
 }

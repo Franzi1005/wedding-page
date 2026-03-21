@@ -1,0 +1,194 @@
+.Hotels {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Hotels h1 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 550;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  color: rgb(135, 109, 109);
+}
+
+.hotels-intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  color: rgb(135, 109, 109);
+  padding: 0 20px;
+}
+
+.hotels-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: start;
+}
+
+.map-section {
+  position: sticky;
+  top: 20px;
+  height: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hotels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.hotel-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  position: relative;
+}
+
+.hotel-card.wedding-location {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(255, 255, 255, 0.95));
+  border: 3px solid rgb(203, 179, 179);
+  box-shadow: 0 6px 25px rgba(203, 179, 179, 0.4);
+}
+
+.wedding-badge {
+  display: inline-block;
+  background-color: rgb(203, 179, 179);
+  color: rgb(149, 121, 121);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hotel-card h4 {
+  font-size: 22px;
+  color: rgb(135, 109, 109);
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.hotel-address {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(149, 121, 121);
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.hotel-card a {
+  color: rgb(176, 158, 158);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 150ms ease-in-out;
+  display: inline-block;
+}
+
+.hotel-card a:hover {
+  color: rgb(135, 109, 109);
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .hotels-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .map-section {
+    position: relative;
+    height: 450px;
+    order: -1;
+  }
+
+  .hotels-list {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Hotels {
+    padding: 15px;
+  }
+
+  .Hotels h1 {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+
+  .hotels-intro {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+  }
+
+  .map-section {
+    height: 400px;
+  }
+
+  .hotel-card {
+    padding: 25px 20px;
+  }
+
+  .hotel-card h4 {
+    font-size: 20px;
+  }
+
+  .hotel-address {
+    font-size: 16px;
+  }
+
+  .hotel-card a {
+    font-size: 16px;
+  }
+
+  .wedding-badge {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hotels h1 {
+    font-size: 30px;
+  }
+
+  .hotels-intro {
+    font-size: 16px;
+  }
+
+  .map-section {
+    height: 350px;
+  }
+
+  .hotel-card {
+    padding: 20px 15px;
+  }
+
+  .hotel-card h4 {
+    font-size: 19px;
+  }
+
+  .hotel-address {
+    font-size: 15px;
+  }
+}

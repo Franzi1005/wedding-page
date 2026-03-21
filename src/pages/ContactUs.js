@@ -1,13 +1,19 @@
 import React from 'react';
+import { translations, getLanguage } from '../i18n';
+import '../styles/ContactUs.css';
 
 export default function ContactUs() {
+  const lang = getLanguage();
+  const t = translations[lang];
+
   return (
-    <div>
-      <h1>Got questions?</h1>
+    <div className='ContactUs'>
+      <h1>{t.contactTitle}</h1>
+      <p className='contact-subtitle'>{t.contactSubtitle}</p>
       <button>
-        <a href='mailto:fschallhorn@gmail.com'>Please get in touch!</a>
+        <a href='mailto:fschallhorn@gmail.com'>{t.contactButton}</a>
       </button>
-      <h2>We promise we'll get back to you as quickly as possible🫡</h2>
+      <h2>{t.contactPromise}</h2>
     </div>
   );
 }

@@ -1,41 +1,31 @@
 import React, { useState } from 'react';
 import RvspModal from './components/RvspModal';
+import { translations, getLanguage } from '../i18n';
 
 export default function Home() {
   let [isOpen, setIsOpen] = useState(false);
-  function openModal() {
-    alert('whoop');
-  }
+  const lang = getLanguage();
+  const t = translations[lang];
 
-  function sendRvsp() {
-    alert('RVSP sent');
-  }
   return (
     <div className='home'>
-      <h1>We're getting married!</h1>
-      <h2>12.09.2026, 6:00 pm</h2>
-      <h3>📍Schilling Roofbar, Alte Glockengießerei 9, 69115 Heidelberg</h3>
-      <p className='dressCode'>
-        👗🥻👔👞👠 Dress Code: Cocktail / Semi-formal / Festive{' '}
-      </p>
-      <p>
-        To allow everyone to fully relax and enjoy the celebration, we’ve chosen
-        to make our wedding an adults-only event. Thank you so much for your
-        understanding — we can’t wait to celebrate with you! 💕
-      </p>
-      <img src='./pictures/CuF.jpeg' />
+      <h1>{t.homeTitle}</h1>
+      <img src='./pictures/CuF.jpeg' alt='Christoph and Franzi' />
+      <h2>{t.homeDate}</h2>
+      <h3>{t.homeLocation}</h3>
+      <p className='dressCode'>{t.homeDressCode}</p>
+      <p>{t.homeAdultsOnly}</p>
       <button
         onClick={() => {
           setIsOpen(true);
         }}
       >
-        RVSP
+        {t.rsvpButton}
       </button>
 
       <RvspModal
         open={isOpen}
         onClose={() => setIsOpen(false)}
-        sendRvsp={sendRvsp}
       />
     </div>
   );
