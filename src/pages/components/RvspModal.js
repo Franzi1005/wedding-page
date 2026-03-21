@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './rvspModal.css';
 import { translations, getLanguage } from '../../i18n';
 
-export default function RvspModal({ open, onClose, sendRvsp }) {
+export default function RvspModal({ open, onClose }) {
   const [guestName, setGuestName] = useState('');
   const [email, setEmail] = useState('');
   const [hasPlusOne, setHasPlusOne] = useState(false);
@@ -58,7 +58,7 @@ export default function RvspModal({ open, onClose, sendRvsp }) {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <input type='submit' value={t.rsvpSubmit} />
+          <input type='submit' value={t.rsvpSubmit} onSubmit={onClose} />
         </form>
       </div>
     </div>
