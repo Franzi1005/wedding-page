@@ -184,6 +184,60 @@ export default function RvspModal({ open, close }) {
               <span className='errorMessage'>{errors.guestName}</span>
             )}
           </div>
+          <div className={`dietarySection ${errors.dietaryPreference && touched.dietaryPreference ? 'error' : ''}`}>
+            <label className='dietaryLabel'>{t.rsvpDietaryPreferences}</label>
+            <div className='checkboxContainer'>
+              <input
+                type='radio'
+                name='dietaryPreference'
+                id='none'
+                value='none'
+                checked={dietaryPreference === 'none'}
+                onChange={(e) => {
+                  setDietaryPreference(e.target.value);
+                  if (touched.dietaryPreference) {
+                    validateField('dietaryPreference', e.target.value);
+                  }
+                }}
+              />
+              <label htmlFor='none'>{t.rsvpNoDietaryRestrictions}</label>
+            </div>
+            <div className='checkboxContainer'>
+              <input
+                type='radio'
+                name='dietaryPreference'
+                id='vegetarian'
+                value='vegetarian'
+                checked={dietaryPreference === 'vegetarian'}
+                onChange={(e) => {
+                  setDietaryPreference(e.target.value);
+                  if (touched.dietaryPreference) {
+                    validateField('dietaryPreference', e.target.value);
+                  }
+                }}
+              />
+              <label htmlFor='vegetarian'>{t.rsvpVegetarian}</label>
+            </div>
+            <div className='checkboxContainer'>
+              <input
+                type='radio'
+                name='dietaryPreference'
+                id='vegan'
+                value='vegan'
+                checked={dietaryPreference === 'vegan'}
+                onChange={(e) => {
+                  setDietaryPreference(e.target.value);
+                  if (touched.dietaryPreference) {
+                    validateField('dietaryPreference', e.target.value);
+                  }
+                }}
+              />
+              <label htmlFor='vegan'>{t.rsvpVegan}</label>
+            </div>
+            {errors.dietaryPreference && touched.dietaryPreference && (
+              <span className='errorMessage'>{errors.dietaryPreference}</span>
+            )}
+          </div>
           <div className='checkboxContainer'>
             <input
               type='checkbox'
@@ -288,60 +342,6 @@ export default function RvspModal({ open, close }) {
             />
             {errors.email && touched.email && (
               <span className='errorMessage'>{errors.email}</span>
-            )}
-          </div>
-          <div className={`dietarySection ${errors.dietaryPreference && touched.dietaryPreference ? 'error' : ''}`}>
-            <label className='dietaryLabel'>{t.rsvpDietaryPreferences}</label>
-            <div className='checkboxContainer'>
-              <input
-                type='radio'
-                name='dietaryPreference'
-                id='none'
-                value='none'
-                checked={dietaryPreference === 'none'}
-                onChange={(e) => {
-                  setDietaryPreference(e.target.value);
-                  if (touched.dietaryPreference) {
-                    validateField('dietaryPreference', e.target.value);
-                  }
-                }}
-              />
-              <label htmlFor='none'>{t.rsvpNoDietaryRestrictions}</label>
-            </div>
-            <div className='checkboxContainer'>
-              <input
-                type='radio'
-                name='dietaryPreference'
-                id='vegetarian'
-                value='vegetarian'
-                checked={dietaryPreference === 'vegetarian'}
-                onChange={(e) => {
-                  setDietaryPreference(e.target.value);
-                  if (touched.dietaryPreference) {
-                    validateField('dietaryPreference', e.target.value);
-                  }
-                }}
-              />
-              <label htmlFor='vegetarian'>{t.rsvpVegetarian}</label>
-            </div>
-            <div className='checkboxContainer'>
-              <input
-                type='radio'
-                name='dietaryPreference'
-                id='vegan'
-                value='vegan'
-                checked={dietaryPreference === 'vegan'}
-                onChange={(e) => {
-                  setDietaryPreference(e.target.value);
-                  if (touched.dietaryPreference) {
-                    validateField('dietaryPreference', e.target.value);
-                  }
-                }}
-              />
-              <label htmlFor='vegan'>{t.rsvpVegan}</label>
-            </div>
-            {errors.dietaryPreference && touched.dietaryPreference && (
-              <span className='errorMessage'>{errors.dietaryPreference}</span>
             )}
           </div>
           <textarea

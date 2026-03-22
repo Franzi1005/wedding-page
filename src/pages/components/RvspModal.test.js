@@ -159,8 +159,6 @@ describe('RvspModal Component', () => {
       const guestVegan = screen.getAllByLabelText('Vegan')[0];
       fireEvent.click(guestVegan);
 
-      // Select none for plus one
-      const plusOneNone = screen.getByLabelText(/No dietary restrictions/i);
       // Find the second "No dietary restrictions" radio for plus one
       const allNoneRadios = screen.getAllByLabelText(/No dietary restrictions/i);
       fireEvent.click(allNoneRadios[1]);
@@ -366,11 +364,7 @@ describe('RvspModal Component', () => {
       fireEvent.change(nameInput, { target: { value: 'John Doe' } });
       fireEvent.change(emailInput, { target: { value: 'john@example.com' } });
 
-      // Select guest dietary preference
-      const guestNone = screen.getByLabelText(/No dietary restrictions/i);
-      fireEvent.click(guestNone);
-
-      // Add plus one
+      // Add plus one first
       const plusOneCheckbox = screen.getByLabelText(/bringing a Plus One/i);
       fireEvent.click(plusOneCheckbox);
 
@@ -378,7 +372,10 @@ describe('RvspModal Component', () => {
       const plusOneNameInput = screen.getByPlaceholderText(/Plus One name/i);
       fireEvent.change(plusOneNameInput, { target: { value: 'Jane Doe' } });
 
-      // Select plus one dietary preference
+      // Now select dietary preferences (both will be visible)
+      const allNoneRadios = screen.getAllByLabelText(/No dietary restrictions/i);
+      fireEvent.click(allNoneRadios[0]); // Main guest
+
       const allVegetarian = screen.getAllByLabelText('Vegetarian');
       fireEvent.click(allVegetarian[1]); // Plus one's vegetarian option
 
@@ -528,16 +525,26 @@ describe('RvspModal Component', () => {
   });
 
   describe('Edge cases', () => {
+    beforeEach(() => {
+      global.fetch = jest.fn();
+    });
+
+    afterEach(() => {
+      global.fetch.mockRestore();
+    });
+
     it('requires plus one dietary preference only when plus one is checked', async () => {
+      global.fetch.mockResolvedValue({ ok: true });
+
       render(<RvspModal open={true} close={mockOnClose} />);
 
       const nameInput = screen.getByPlaceholderText(/enter your name/i);
       const emailInput = screen.getByPlaceholderText(/email address/i);
-      const guestNone = screen.getByLabelText(/No dietary restrictions/i);
+      const guestNoneRadios = screen.getAllByLabelText(/No dietary restrictions/i);
 
       fireEvent.change(nameInput, { target: { value: 'John Doe' } });
       fireEvent.change(emailInput, { target: { value: 'john@example.com' } });
-      fireEvent.click(guestNone);
+      fireEvent.click(guestNoneRadios[0]);
 
       const submitButton = screen.getByRole('button', { name: /Send RSVP/i });
       fireEvent.click(submitButton);

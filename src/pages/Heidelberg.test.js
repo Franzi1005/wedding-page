@@ -153,9 +153,10 @@ describe('Heidelberg Component', () => {
 
     it('maintains all external links in both languages', () => {
       // English
-      render(<Heidelberg />);
+      const { unmount: unmountEn } = render(<Heidelberg />);
       const enLinks = screen.getAllByRole('link');
       const enCount = enLinks.length;
+      unmountEn();
 
       // German
       mockNavigatorLanguage('de-DE');

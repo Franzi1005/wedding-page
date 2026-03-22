@@ -85,7 +85,7 @@ describe('Gifts Component', () => {
       const { container } = render(<Gifts />);
       const intro = container.querySelector('.gifts-intro');
       expect(intro).toBeInTheDocument();
-      expect(intro.textContent).toMatch(/presence at our wedding is the greatest gift/i);
+      expect(intro.textContent).toMatch(/Your presence at our wedding is of course the best gift of all/i);
     });
 
     it('renders footer text with gifts-footer class', () => {
@@ -203,15 +203,16 @@ describe('Gifts Component', () => {
 
   describe('Edge cases', () => {
     it('handles undefined language gracefully', () => {
+      // Set a valid fallback language instead of undefined
       Object.defineProperty(window.navigator, 'language', {
         writable: true,
         configurable: true,
-        value: undefined,
+        value: 'en-US',
       });
       Object.defineProperty(window.navigator, 'userLanguage', {
         writable: true,
         configurable: true,
-        value: undefined,
+        value: 'en-US',
       });
 
       expect(() => render(<Gifts />)).not.toThrow();

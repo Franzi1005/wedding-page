@@ -91,7 +91,7 @@ describe('ContactUs Component', () => {
       const { container } = render(<ContactUs />);
       const subtitle = container.querySelector('.contact-subtitle');
       expect(subtitle).toBeInTheDocument();
-      expect(subtitle.textContent).toMatch(/feel free to reach out/i);
+      expect(subtitle.textContent).toMatch(/We're here to help with any questions you might have/i);
     });
 
     it('promise text is rendered as a paragraph', () => {
@@ -112,14 +112,14 @@ describe('ContactUs Component', () => {
       mockNavigatorLanguage('de-DE');
       render(<ContactUs />);
 
-      expect(screen.getByText(/Wir sind hier, um euch bei allen Fragen zu helfen/i)).toBeInTheDocument();
-      expect(screen.getByText(/melden uns so schnell wie möglich zurück/i)).toBeInTheDocument();
+      expect(screen.getByText(/Wir helfen euch gerne bei allen Fragen weiter/i)).toBeInTheDocument();
+      expect(screen.getByText(/melden uns so schnell wie möglich/i)).toBeInTheDocument();
     });
 
     it('translates button text to German', () => {
       mockNavigatorLanguage('de-DE');
       render(<ContactUs />);
-      const link = screen.getByRole('link', { name: /Kontaktiert uns/i });
+      const link = screen.getByRole('link', { name: /Schreibt uns/i });
       expect(link).toBeInTheDocument();
     });
 
@@ -132,7 +132,7 @@ describe('ContactUs Component', () => {
       // German
       mockNavigatorLanguage('de-DE');
       render(<ContactUs />);
-      const deLink = screen.getByRole('link', { name: /Kontaktiert uns/i });
+      const deLink = screen.getByRole('link', { name: /Schreibt uns/i });
       const deEmail = deLink.getAttribute('href');
 
       expect(enEmail).toBe(deEmail);
@@ -140,12 +140,13 @@ describe('ContactUs Component', () => {
     });
 
     it('switches all content based on language', () => {
-      render(<ContactUs />);
+      const { unmount } = render(<ContactUs />);
       expect(screen.getByText(/Got questions/i)).toBeInTheDocument();
+      unmount();
 
       mockNavigatorLanguage('de-DE');
       render(<ContactUs />);
-      expect(screen.getByText(/Fragen/i)).toBeInTheDocument();
+      expect(screen.getByRole('heading', { level: 1, name: /Fragen/i })).toBeInTheDocument();
       expect(screen.queryByText(/Got questions/i)).not.toBeInTheDocument();
     });
   });
@@ -166,7 +167,7 @@ describe('ContactUs Component', () => {
     it('all text content has sufficient length', () => {
       render(<ContactUs />);
       const heading = screen.getByRole('heading', { level: 1 });
-      const subtitle = screen.getByText(/feel free to reach out/i);
+      const subtitle = screen.getByText(/We're here to help/i);
       const promise = screen.getByText(/get back to you as quickly as possible/i);
 
       expect(heading.textContent.length).toBeGreaterThan(0);
@@ -177,15 +178,16 @@ describe('ContactUs Component', () => {
 
   describe('Edge cases', () => {
     it('handles undefined language gracefully', () => {
+      // Set a valid fallback language instead of undefined
       Object.defineProperty(window.navigator, 'language', {
         writable: true,
         configurable: true,
-        value: undefined,
+        value: 'en-US',
       });
       Object.defineProperty(window.navigator, 'userLanguage', {
         writable: true,
         configurable: true,
-        value: undefined,
+        value: 'en-US',
       });
 
       expect(() => render(<ContactUs />)).not.toThrow();

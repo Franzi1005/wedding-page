@@ -450,13 +450,11 @@ describe('i18n utilities', () => {
       expect(translations.de.castleHikeEnd).toBeDefined();
     });
 
-    it('has castle view related translations', () => {
-      expect(translations.en.castleViewText).toBeDefined();
-      expect(translations.en.castleViewLink).toBeDefined();
-      expect(translations.en.castleViewEnd).toBeDefined();
-      expect(translations.de.castleViewText).toBeDefined();
-      expect(translations.de.castleViewLink).toBeDefined();
-      expect(translations.de.castleViewEnd).toBeDefined();
+    it('has castle shorter route related translations', () => {
+      expect(translations.en.castleShorterText).toBeDefined();
+      expect(translations.en.castleShorterLink).toBeDefined();
+      expect(translations.de.castleShorterText).toBeDefined();
+      expect(translations.de.castleShorterLink).toBeDefined();
     });
 
     it('castle hike translations form complete sentences', () => {
@@ -497,13 +495,13 @@ describe('i18n utilities', () => {
 
   describe('Special characters handling', () => {
     it('handles German umlauts correctly', () => {
-      expect(translations.de.hotelsTitle).toContain('Übernachtungsmöglichkeiten');
-      expect(translations.de.giftsIntro).toContain('größte');
+      expect(translations.de.hotelsTitle).toContain('Übernachtung');
+      expect(translations.de.giftsIntro).toContain('Anwesenheit');
     });
 
     it('handles apostrophes and quotes', () => {
       expect(translations.en.homeTitle).toContain("'");
-      expect(translations.en.giftsIntro).toContain("'");
+      expect(translations.en.contactPromise).toContain("'");
     });
 
     it('no encoding issues in translations', () => {
