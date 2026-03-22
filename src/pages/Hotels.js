@@ -30,29 +30,32 @@ export default function Hotels() {
       name: 'Wedding Location (Schilling Roofbar)',
       lat: 49.40674303895697,
       lng: 8.68574880839979,
-      address:
-        'Alte Glockengießerei 9, 8. Obergeschoss, 69115 Heidelberg',
+      street: 'Alte Glockengießerei 9 (8. Obergeschoss)',
+      city: '69115 Heidelberg',
       website: 'https://schillingroofbar.com/',
     },
     {
       name: 'Hotel NH Collection Heidelberg',
       lat: 49.40774985278626,
       lng: 8.682852387303196,
-      address: 'Bergheimer Str. 91, 69115 Heidelberg',
+      street: 'Bergheimer Str. 91',
+      city: '69115 Heidelberg',
       website: 'https://www.nh-hotels.com/hotel/nh-collection-heidelberg',
     },
     {
       name: 'Qube Hotel Bergheim',
       lat: 49.408109370283874,
       lng: 8.681441545397998,
-      address: 'Bergheimer Str. 74, 69115 Heidelberg',
+      street: 'Bergheimer Str. 74',
+      city: '69115 Heidelberg',
       website: 'https://www.qube-hotel-heidelberg.de/',
     },
     {
       name: 'Premier Inn Heidelberg City (Zentrum)',
       lat: 49.405966188212,
       lng: 8.686087131291153,
-      address: 'Rohrbacher Str. 14, 69115 Heidelberg',
+      street: 'Rohrbacher Str. 14',
+      city: '69115 Heidelberg',
       website:
         'https://www.premierinn.com/de/de/hotels/deutschland/baden-wuerttemberg/heidelberg/heidelberg-city-zentrum.html',
     },
@@ -60,36 +63,42 @@ export default function Hotels() {
       name: 'ATLANTIC Hotel Heidelberg',
       lat: 49.40341274729383,
       lng: 8.674239248177496,
-      address: 'Kurfürsten-Anlage 59, 69115 Heidelberg',
+      street: 'Kurfürsten-Anlage 59',
+      city: '69115 Heidelberg',
       website: 'https://atlantic-hotels.de/hotel-heidelberg',
     },
     {
       name: 'Hotel Bergheim41',
       lat: 49.40850007662099,
       lng: 8.68863805564746,
-      address: 'Bergheimer Str. 41, 69115 Heidelberg',
-      website: 'https://www.guestreservations.com/de/bergheim-41-hotel-im-alten-hallenbad/booking?s=uberdashotel&utm_source=google&utm_medium=cpc&utm_campaign=22774674877&gad_source=1&gad_campaignid=22774674877&gbraid=0AAAAADiMQMb4fAmMht1h00DG5SGBIuOMd&gclid=EAIaIQobChMI6NmG-LSzkwMVirCDBx34xwu4EAAYASABEgLE0PD_BwE',
+      street: 'Bergheimer Str. 41',
+      city: '69115 Heidelberg',
+      website:
+        'https://www.guestreservations.com/de/bergheim-41-hotel-im-alten-hallenbad/booking?s=uberdashotel&utm_source=google&utm_medium=cpc&utm_campaign=22774674877&gad_source=1&gad_campaignid=22774674877&gbraid=0AAAAADiMQMb4fAmMht1h00DG5SGBIuOMd&gclid=EAIaIQobChMI6NmG-LSzkwMVirCDBx34xwu4EAAYASABEgLE0PD_BwE',
     },
     {
       name: 'Aparthotel Adagio Heidelberg',
       lat: 49.40341274729383,
       lng: 8.674239248177496,
-      address: 'Kurfürsten-Anlage 59, 69115 Heidelberg',
-      website: 'https://www.adagio-city.com/de/hotel-b4s9-aparthotel-adagio-heidelberg.shtml',
+      street: 'Kurfürsten-Anlage 59',
+      city: '69115 Heidelberg',
+      website:
+        'https://www.adagio-city.com/de/hotel-b4s9-aparthotel-adagio-heidelberg.shtml',
     },
     {
       name: 'IntercityHotel Heidelberg',
       lat: 49.404927723460666,
       lng: 8.67438803274917,
-      address: 'Kurfürsten-Anlage 1, 69115 Heidelberg',
-      website:
-        'https://hrewards.com/de/intercityhotel-heidelberg',
+      street: 'Kurfürsten-Anlage 1',
+      city: '69115 Heidelberg',
+      website: 'https://hrewards.com/de/intercityhotel-heidelberg',
     },
     {
       name: 'The Heidelberg Exzellenz Hotel',
       lat: 49.40494168615879,
       lng: 8.69263778271681,
-      address: 'Kirchheimer Weg 40, 69118 Heidelberg',
+      street: 'Kirchheimer Weg 40',
+      city: '69118 Heidelberg',
       website: 'https://www.the-heidelberg.de/',
     },
   ];
@@ -137,7 +146,8 @@ export default function Hotels() {
                   <div className='wedding-badge'>{t.weddingVenueBadge}</div>
                 )}
                 <h4>{hotel.name}</h4>
-                <p className='hotel-address'>{hotel.address}</p>
+                <p className='hotel-address'>{hotel.street}</p>
+                <p className='hotel-address'>{hotel.city}</p>
                 <a
                   href={hotel.website}
                   target='_blank'
