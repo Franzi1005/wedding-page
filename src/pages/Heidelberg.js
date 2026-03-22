@@ -31,13 +31,13 @@ export default function Heidelberg() {
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
             <div className='restaurant-info'>
-              <h4>Vetter's Alt Heidelberger Brauhaus</h4>
+              <h4>Vetter's Alt Heidelberger Brauhaus 🍻</h4>
               <p>
                 Steingasse 9
                 <br />
                 69117 Heidelberg
               </p>
-              <a href='https://www.brauhaus-vetter.de/en'>
+              <a href='https://www.brauhaus-vetter.de/en' target='_blank'>
                 Vetter's Alt Heidelberger Brauhaus
               </a>
             </div>
@@ -52,13 +52,13 @@ export default function Heidelberg() {
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
             <div className='restaurant-info'>
-              <h4>Cenneto</h4>
+              <h4>Cenneto 🍷</h4>
               <p>
                 Da-Vinci-Straße 16
                 <br />
                 69115 Heidelberg
               </p>
-              <a href='https://cenneto.com/pages/flaschenweinkarte'>
+              <a href='https://cenneto.com/' target='_blank'>
                 Cenneto - Website
               </a>
             </div>
@@ -73,20 +73,61 @@ export default function Heidelberg() {
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
             <div className='restaurant-info'>
-              <h4>Bhukkad Dhaba</h4>
+              <h4>Bhukkad Dhaba 🥘</h4>
               <p>
                 Hebelstraße 17
                 <br />
                 68723 Plankstadt
               </p>
-              <a href='https://bhukkaddhaba.eu/en/bhukkad-dhaba-en/'>
+              <a href='https://bhukkaddhaba.eu/en/bhukkad-dhaba-en/' target='_blank'>
                 Bhukkad Dhaba - Website
               </a>
             </div>
           </div>
           <div className='card'>
             <iframe
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2597.5733633407017!2d8.688536076275176!3d49.37914517140747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c17e199ec9e5%3A0xf0ec5edd5876128b!2zVGFpZuKAmHM!5e0!3m2!1sde!2sde!4v1770028073597!5m2!1sde!2sde'
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.776140238689!2d8.710600776915513!3d49.41313896150699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c1a81df9996d%3A0xb0cec22d395e79e1!2sKulturbrauerei%20Heidelberg!5e0!3m2!1sen!2sde!4v1774180697572!5m2!1sen!2sde"
+                style={{ border: 0 }}
+                allowFullScreen=''
+                loading='lazy'
+                title='Kulturbrauerei'
+                referrerPolicy='no-referrer-when-downgrade'></iframe>
+            <div className='restaurant-info'>
+              <h4>Kulturbrauerei Heidelberg 🍖🍺</h4>
+              <p>
+                Leyergasse 6
+                <br/>
+                69117 Heidelberg
+              </p>
+              <a href='http://www.heidelberger-kulturbrauerei.de/' target='_blank'>
+                Kulturbrauerei Heidelberg - Website
+              </a>
+            </div>
+          </div>
+          <div className='card'>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5191.523945924452!2d8.710770176915513!3d49.41340686148777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c107f9bc868b%3A0xc064598188ba871e!2sBent%20Bar%20-%20Heidelberg!5e0!3m2!1sen!2sde!4v1774180560212!5m2!1sen!2sde"
+                style={{ border: 0 }}
+                allowFullScreen=''
+                loading='lazy'
+                title='Bent Bar Heidelberg'
+                referrerPolicy='no-referrer-when-downgrade'></iframe>
+            <div className='restaurant-info'>
+              <h4>Bent Bar - Heidelberg 🍹</h4>
+              <p>
+                Leyergasse 2
+                <br/>
+                69117 Heidelberg
+              </p>
+              <a href='https://bentbar.de/' target='_blank'>
+                Bent Bar - Heidelberg - Website
+              </a>
+            </div>
+          </div>
+
+          <div className='card'>
+            <iframe
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2597.5733633407017!2d8.688536076275176!3d49.37914517140747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c17e199ec9e5%3A0xf0ec5edd5876128b!2zVGFpZuKAmHM!5e0!3m2!1sde!2sde!4v1770028073597!5m2!1sde!2sde'
               style={{ border: 0 }}
               allowFullScreen=''
               loading='lazy'
@@ -94,13 +135,68 @@ export default function Heidelberg() {
               referrerPolicy='no-referrer-when-downgrade'
             ></iframe>
             <div className='restaurant-info'>
-              <h4>Taif's</h4>
+              <h4>Taif's 🥙</h4>
               <p>
                 Rathausstraße 52
                 <br />
                 69126 Heidelberg
               </p>
-              <a href='https://taifs.de/'>Taif's</a>
+              <a href='https://taifs.de/' target='_blank'>Taif's</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='restaurants'>
+        <h3>{t.heidelbergWhatElseToDo}</h3>
+        <div className='places-in-HD'>
+          <div className='card'>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.9091850653226!2d8.712734276915391!3d49.4106230616854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c100ca43db93%3A0x6d672e3649e97eea!2sHeidelberg%20Castle!5e0!3m2!1sen!2sde!4v1774182403824!5m2!1sen!2sde"
+                style={{ border: 0 }}
+                allowFullScreen=''
+                loading='lazy'
+                title='Heidelberg Castle'
+                referrerPolicy='no-referrer-when-downgrade'></iframe>
+            <div className='restaurant-info'>
+              <h4>Heidelberger Schloss 🏰</h4>
+              <p>Checkout <a href='https://www.komoot.com/de-de/smarttour/e729829737/wanderung-auf-dem-philosophenweg-in-heidelberg-wandern-in-den-staedten-des-suedens?ref=wdd' target= '_blank'><u>this hike</u></a> with the best view of the castle </p>
+              <p>Or for a shorter round check out <a href='https://www.komoot.com/de-de/smarttour/33488950?ref=wdd' target='_blank'><u>this route</u></a></p>
+              <a href='https://www.schloss-heidelberg.de/' target='_blank'>
+                Schloss Heidelberg
+              </a>
+            </div>
+          </div>
+          <div className='card'>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10385.098307299204!2d8.717435378523279!3d49.40371295567476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c04b27096443%3A0x3517a737f0048662!2sK%C3%B6nigstuhl!5e0!3m2!1sen!2sde!4v1774183142631!5m2!1sen!2sde"
+                style={{ border: 0 }}
+                allowFullScreen=''
+                loading='lazy'
+                title='Heidelberg Castle'
+                referrerPolicy='no-referrer-when-downgrade'></iframe>
+            <div className='restaurant-info'>
+              <h4>Königstuhl ⛰️</h4>
+              <a href='https://www.bergbahn-heidelberg.de/koenigstuhl' target='_blank'></a>
+              <p>Checkout <a href='https://www.komoot.com/de-de/tour/1637870297' target= '_blank'><u>this hike</u></a> from the Altstadt </p>
+              <a href='https://www.bergbahn-heidelberg.de/koenigstuhl' target='_blank'>
+                Königstuhl
+              </a>
+            </div>
+          </div>
+          <div className='card'>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10384.75865451467!2d8.702201728524392!3d49.40531885522206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c10682a91b93%3A0x55f7989b7c96f177!2sHeidelberg-Heidelberger%20Altstadt!5e0!3m2!1sen!2sde!4v1774184137366!5m2!1sen!2sde"
+                style={{ border: 0 }}
+                allowFullScreen=''
+                loading='lazy'
+                title='Heidelberg Castle'
+                referrerPolicy='no-referrer-when-downgrade'></iframe>
+            <div className='restaurant-info'>
+              <h4>Heidelberger Altstadt 👨‍🦳🏙️</h4>
+              <a href='https://www.visit-bw.com/en/article/heidelberg-old-town/ae169718-dc73-40a4-9ec1-3f74084d8ed2#/'
+                 target='_blank'>
+                Altstadt Heidelberg
+              </a>
             </div>
           </div>
         </div>

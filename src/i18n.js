@@ -29,6 +29,7 @@ export const translations = {
     heidelbergClosing: "We hope you'll enjoy your time here!",
     heidelbergSignature: "Love, Christoph & Franzi",
     heidelbergRestaurants: "Best Bars and Restaurants in Heidelberg",
+    heidelbergWhatElseToDo: "Must Sees in Heidelberg",
 
     // Gifts page
     giftsTitle: "Wedding Gifts",
