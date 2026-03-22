@@ -68,6 +68,10 @@ export const translations = {
     rsvpEmailPlaceholder: "Email address",
     rsvpPlusOne: "I'm bringing a Plus One",
     rsvpPlusOnePlaceholder: "Plus One name",
+    rsvpDietaryPreferences: "Dietary Preferences",
+    rsvpVegetarian: "Vegetarian",
+    rsvpVegan: "Vegan",
+    rsvpCommentsPlaceholder: "Food allergies or any other comments? Let us know here!",
     rsvpSubmit: "Send RSVP",
   },
   de: {
@@ -139,6 +143,10 @@ export const translations = {
     rsvpEmailPlaceholder: "E-Mail-Adresse",
     rsvpPlusOne: "Ich bringe eine Begleitung mit",
     rsvpPlusOnePlaceholder: "Name der Begleitung",
+    rsvpDietaryPreferences: "Essensvorlieben",
+    rsvpVegetarian: "Vegetarisch",
+    rsvpVegan: "Vegan",
+    rsvpCommentsPlaceholder: "Lebensmittelallergien oder sonstige Anmerkungen? Schreibt es uns hier!",
     rsvpSubmit: "Zusage senden",
   }
 };

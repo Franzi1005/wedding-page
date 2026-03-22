@@ -7,6 +7,8 @@ export default function RvspModal({ open, close }) {
   const [email, setEmail] = useState('');
   const [hasPlusOne, setHasPlusOne] = useState(false);
   const [plusOneName, setPlusOneName] = useState('');
+  const [dietaryPreference, setDietaryPreference] = useState('');
+  const [comments, setComments] = useState('');
   const lang = getLanguage();
   const t = translations[lang];
 
@@ -57,6 +59,38 @@ export default function RvspModal({ open, close }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+          />
+          <div className='dietarySection'>
+            <label className='dietaryLabel'>{t.rsvpDietaryPreferences}</label>
+            <div className='checkboxContainer'>
+              <input
+                type='radio'
+                name='dietaryPreference'
+                id='vegetarian'
+                value='vegetarian'
+                checked={dietaryPreference === 'vegetarian'}
+                onChange={(e) => setDietaryPreference(e.target.value)}
+              />
+              <label htmlFor='vegetarian'>{t.rsvpVegetarian}</label>
+            </div>
+            <div className='checkboxContainer'>
+              <input
+                type='radio'
+                name='dietaryPreference'
+                id='vegan'
+                value='vegan'
+                checked={dietaryPreference === 'vegan'}
+                onChange={(e) => setDietaryPreference(e.target.value)}
+              />
+              <label htmlFor='vegan'>{t.rsvpVegan}</label>
+            </div>
+          </div>
+          <textarea
+            name='comments'
+            placeholder={t.rsvpCommentsPlaceholder}
+            value={comments}
+            onChange={(e) => setComments(e.target.value)}
+            rows='4'
           />
           <input type='submit' value={t.rsvpSubmit} onSubmit={close} />
         </form>
