@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import RvspModal from './components/RvspModal';
 import { translations, getLanguage } from '../i18n';
 
@@ -11,18 +12,19 @@ export default function Home() {
     <div className='home'>
       <h1>{t.homeTitle}</h1>
       <img src='./pictures/CuF6.jpg' alt='Christoph and Franzi' />
-      <h2>{t.homeDate}</h2>
-      <h3>{t.homeLocation}</h3>
+      <div className='event-info'>
+        <h2>{t.homeDate}</h2>
+        <h3>{t.homeLocation}</h3>
       <p className='dressCode'>{t.homeDressCode}</p>
-      <p>{t.homeAdultsOnly}</p>
-      <button
-        onClick={() => {
-          setIsOpen(true);
-        }}
-      >
-        {t.rsvpButton}
-      </button>
-
+      </div>
+        <button
+            onClick={() => {
+                setIsOpen(true);
+            }}
+        >
+            {t.rsvpButton}
+        </button>
+        <p className='general-info'>{t.homeInfo}<Link to="/ContactUs"> <u>{t.homeViaEmail}</u></Link>{t.homeCelebrate}</p>
       <RvspModal open={isOpen} close={() => setIsOpen(false)} />
     </div>
   );

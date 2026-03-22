@@ -13,7 +13,7 @@ export default function ContactUs() {
       <button>
         <a href='mailto:fschallhorn@gmail.com'>{t.contactButton}</a>
       </button>
-      <h2>{t.contactPromise}</h2>
+      <p>{t.contactPromise}</p>
     </div>
   );
 }

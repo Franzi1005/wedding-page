@@ -19,7 +19,7 @@
 }
 
 .contact-subtitle {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.7;
   color: rgb(135, 109, 109);
   margin-bottom: 30px;
@@ -36,7 +36,7 @@
 }
 
 .ContactUs h2 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: normal;
   margin-top: 30px;
   color: rgb(149, 121, 121);
@@ -56,7 +56,7 @@
   }
 
   .contact-subtitle {
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 25px;
   }
 
@@ -67,7 +67,7 @@
   }
 
   .ContactUs h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 25px;
   }
 }
@@ -78,7 +78,7 @@
   }
 
   .contact-subtitle {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .ContactUs button {
@@ -87,6 +87,6 @@
   }
 
   .ContactUs h2 {
-    font-size: 17px;
+    font-size: 19px;
   }
 }

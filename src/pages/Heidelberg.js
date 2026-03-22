@@ -141,7 +141,7 @@ export default function Heidelberg() {
                 <br />
                 69126 Heidelberg
               </p>
-              <a href='https://taifs.de/' target='_blank' rel='noreferrer'>Taif's</a>
+              <a href='https://taifs.de/' target='_blank' rel='noreferrer'>Taif's - Website</a>
             </div>
           </div>
         </div>
@@ -159,10 +159,10 @@ export default function Heidelberg() {
                 referrerPolicy='no-referrer-when-downgrade'></iframe>
             <div className='restaurant-info'>
               <h4>Heidelberger Schloss 🏰</h4>
-              <p>Checkout <a href='https://www.komoot.com/de-de/smarttour/e729829737/wanderung-auf-dem-philosophenweg-in-heidelberg-wandern-in-den-staedten-des-suedens?ref=wdd' target= '_blank' rel='noreferrer'><u>this hike</u></a> with the best view of the castle </p>
-              <p>Or for a shorter round check out <a href='https://www.komoot.com/de-de/smarttour/33488950?ref=wdd' target='_blank' rel='noreferrer'><u>this route</u></a></p>
+              <p>{t.castleHikeText}<a href='https://www.komoot.com/de-de/smarttour/e729829737/wanderung-auf-dem-philosophenweg-in-heidelberg-wandern-in-den-staedten-des-suedens?ref=wdd' target= '_blank' rel='noreferrer'><u>{t.castleHikeLink}</u></a>{t.castleHikeEnd}</p>
+              <p>{t.castleShorterText}<a href='https://www.komoot.com/de-de/smarttour/33488950?ref=wdd' target='_blank' rel='noreferrer'><u>{t.castleShorterLink}</u></a></p>
               <a href='https://www.schloss-heidelberg.de/' target='_blank' rel='noreferrer'>
-                Schloss Heidelberg
+                {t.castleWebsite}
               </a>
             </div>
           </div>
@@ -176,9 +176,9 @@ export default function Heidelberg() {
                 referrerPolicy='no-referrer-when-downgrade'></iframe>
             <div className='restaurant-info'>
               <h4>Königstuhl ⛰️</h4>
-              <p>Checkout <a href='https://www.komoot.com/de-de/tour/1637870297' target= '_blank' rel='noreferrer'><u>this hike</u></a> from the Altstadt </p>
+              <p>{t.koenigstuhlText}<a href='https://www.komoot.com/de-de/tour/1637870297' target= '_blank' rel='noreferrer'><u>{t.koenigstuhlLink}</u></a>{t.koenigstuhlEnd}</p>
               <a href='https://www.bergbahn-heidelberg.de/koenigstuhl' target='_blank' rel='noreferrer'>
-                Königstuhl
+                {t.koenigstuhlWebsite}
               </a>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function Heidelberg() {
               <h4>Heidelberger Altstadt 👨‍🦳🏙️</h4>
               <a href='https://www.visit-bw.com/en/article/heidelberg-old-town/ae169718-dc73-40a4-9ec1-3f74084d8ed2#/'
                  target='_blank' rel='noopener noreferrer'>
-                Altstadt Heidelberg
+                {t.altstadtWebsite}
               </a>
             </div>
           </div>

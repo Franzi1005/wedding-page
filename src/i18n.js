@@ -1,11 +1,14 @@
 export const translations = {
   en: {
     // Home page
-    homeTitle: "We're getting married!",
-    homeDate: "12.09.2026, 6:00 pm",
+    homeTitle: "We're getting married! ❤️🦆",
+    homeDate: "12. September 2026, 6:00 pm",
     homeLocation: "📍Schilling Roofbar, Alte Glockengießerei 9, 69115 Heidelberg",
-    homeDressCode: "👗🥻👔👞👠 Dress Code: Cocktail / Semi-formal / Festive",
-    homeAdultsOnly: "To allow everyone to fully relax and enjoy the celebration, we've chosen to make our wedding an adults-only event. Thank you so much for your understanding — we can't wait to celebrate with you! 💕",
+    homeDressCode: "👗👠 Dress Code: Cocktail / Semi-formal / Festive",
+    homeInfo: "❣️Please be advised that we won't send out invitation cards. All relevant information can be found on this page. Please make sure to RSVP above. In case there are any changes kindly update us",
+    homeViaEmail: " via Email",
+    homeCelebrate: ". We can't wait to celebrate with you! 💕",
+
     rsvpButton: "RSVP",
 
     // Navigation
@@ -17,7 +20,7 @@ export const translations = {
 
     // Hotels page
     hotelsTitle: "Where to Stay",
-    hotelsIntro: "We've selected some wonderful hotels near the venue for your convenience. All are within walking distance or a short ride to the celebration.",
+    hotelsIntro: "In case you need a hotel, below you can find some hotels we'd recommend close enough to the venue. We hope you enjoy your time in Heidelberg!.",
     weddingVenueBadge: "💒 Wedding Venue",
     viewWebsite: "View Website →",
 
@@ -31,20 +34,33 @@ export const translations = {
     heidelbergRestaurants: "Best Bars and Restaurants in Heidelberg",
     heidelbergWhatElseToDo: "Must Sees in Heidelberg",
 
+    // Must Sees content
+    castleHikeText: "Checkout ",
+    castleHikeLink: "this hike",
+    castleHikeEnd: " with the best view of the castle.",
+    castleShorterText: "Or for a shorter round check out ",
+    castleShorterLink: "this route.",
+    castleWebsite: "Schloss Heidelberg",
+    koenigstuhlText: "Checkout ",
+    koenigstuhlLink: "this hike",
+    koenigstuhlEnd: " from the Altstadt.",
+    koenigstuhlWebsite: "Königstuhl",
+    altstadtWebsite: "Altstadt Heidelberg",
+
     // Gifts page
     giftsTitle: "Wedding Gifts",
-    giftsIntro: "Your presence at our wedding is the greatest gift of all! However, if you wish to honor us with a gift, we would be grateful for a contribution towards our future together.",
+    giftsIntro: "Your presence at our wedding is of course the best gift of all! However, if you wish to honour us with a gift, we would be grateful for a contribution towards our future together.",
     giftsCardTitle: "Send a Gift via PayPal",
-    giftsCardDescription: "You can send your gift securely through PayPal using the button below:",
+    giftsCardDescription: "You can send your gift securely through PayPal using the button below: ",
     giftsButton: "Send Gift via PayPal",
-    giftsFooter: "Thank you for your kindness and generosity! We can't wait to celebrate with you.",
+    giftsFooter: "Thank you for your kindness and generosity! We can't wait to celebrate with you. Please keep in mind that we find digital payments more convenient than physical gifts 😉",
     giftsSignature: "Love, Christoph & Franzi",
 
     // Contact page
     contactTitle: "Got questions?",
     contactSubtitle: "We're here to help with any questions you might have!",
     contactButton: "Please get in touch!",
-    contactPromise: "We promise we'll get back to you as quickly as possible",
+    contactPromise: "We promise we'll get back to you as quickly as possible.",
 
     // RSVP Modal
     rsvpTitle: "RSVP",
@@ -56,11 +72,14 @@ export const translations = {
   },
   de: {
     // Home page
-    homeTitle: "Wir heiraten!",
-    homeDate: "12.09.2026, 18:00 Uhr",
+    homeTitle: "Wir heiraten! ❤️🦆",
+    homeDate: "12. September 2026, 18:00 Uhr",
     homeLocation: "📍Schilling Roofbar, Alte Glockengießerei 9, 69115 Heidelberg",
-    homeDressCode: "👗🥻👔👞👠 Dresscode: Cocktail / Semi-formal / Festlich",
-    homeAdultsOnly: "Damit sich alle entspannen und die Feier genießen können, haben wir uns entschieden, unsere Hochzeit nur für Erwachsene auszurichten. Vielen Dank für euer Verständnis — wir freuen uns sehr darauf, mit euch zu feiern! 💕",
+    homeDressCode: "👗👠 Dresscode: Cocktail / Semi-formal / Festlich",
+    homeInfo: "❣️Bitte beachtet, dass wir keine offiziellen Einladungskarten verschicken. Alle wichtigen Informationen findet ihr auf dieser Website. Bitte gebt uns oben Bescheid, ob ihr kommt. Falls sich bei euch etwas ändert, informiert uns bitte",
+    homeViaEmail: " per E-Mail",
+    homeCelebrate: ". Wir freuen uns darauf, mit euch zu feiern! 💕",
+
     rsvpButton: "Zusagen",
 
     // Navigation
@@ -72,34 +91,47 @@ export const translations = {
 
     // Hotels page
     hotelsTitle: "Übernachtungsmöglichkeiten",
-    hotelsIntro: "Wir haben für euch einige wunderbare Hotels in der Nähe der Location ausgewählt. Alle sind fußläufig oder mit einer kurzen Fahrt erreichbar.",
+    hotelsIntro: "Falls ihr eine Unterkunft braucht, findet ihr hier einige Hotels, die wir empfehlen können und die nah genug an der Location sind. Wir hoffen, ihr genießt eure Zeit in Heidelberg!",
     weddingVenueBadge: "💒 Hochzeitslocation",
     viewWebsite: "Zur Webseite →",
 
     // Heidelberg page
     heidelbergTitle: "Willkommen in Heidelberg",
-    heidelbergIntro: "Heidelberg ist seit einigen Jahren unsere Wahlheimat und auch der Ort, an dem wir uns kennengelernt und verliebt haben❣️",
+    heidelbergIntro: "Heidelberg ist seit einigen Jahren unsere Heimat und auch der Ort, an dem wir uns kennen und lieben gelernt haben ❣️",
     heidelbergDescription: "Mit seinen wunderschönen Schlossruinen und der charmanten Altstadt ist es definitiv ein romantischer Ort.",
-    heidelbergCall: "Falls ihr von weiter her kommt und ein paar Tage hier verbringt, findet ihr unten eine Auswahl an Aktivitäten und unsere Lieblingsorte zum Essen und Trinken!🍽️🍹",
+    heidelbergCall: "Falls ihr von weiter her kommt und ein paar Tage Zeit habt, findet ihr unten eine Auswahl an Aktivitäten und unsere Lieblingsorte zum Essen und Trinken! 🍽️🍹",
     heidelbergClosing: "Wir hoffen, ihr genießt eure Zeit hier!",
-    heidelbergSignature: "Alles Liebe, Christoph & Franzi",
+    heidelbergSignature: "Christoph & Franzi",
     heidelbergRestaurants: "Die besten Bars und Restaurants in Heidelberg",
-    heidelbergWhatElseToDo: "Die besten Orte in Heidelberg",
+    heidelbergWhatElseToDo: "Must-Sees in Heidelberg",
+
+    // Must Sees content
+    castleHikeText: "Wir empfehlen ",
+    castleHikeLink: "diese Wanderung",
+    castleHikeEnd: " für die beste Aussicht auf das Schloss.",
+    castleShorterText: "Oder für eine kürzere Runde ",
+    castleShorterLink: "diese Route.",
+    castleWebsite: "Schloss Heidelberg",
+    koenigstuhlText: "Wir empfehlen ",
+    koenigstuhlLink: "diese Wanderung",
+    koenigstuhlEnd: " von der Altstadt aus.",
+    koenigstuhlWebsite: "Königstuhl",
+    altstadtWebsite: "Altstadt Heidelberg",
 
     // Gifts page
     giftsTitle: "Hochzeitsgeschenke",
-    giftsIntro: "Eure Anwesenheit bei unserer Hochzeit ist das größte Geschenk! Falls ihr uns dennoch mit einem Geschenk ehren möchtet, würden wir uns über einen Beitrag für unsere gemeinsame Zukunft freuen.",
+    giftsIntro: "Eure Anwesenheit bei unserer Hochzeit ist natürlich das schönste Geschenk! Falls ihr uns dennoch mit einem Geschenk ehren möchtet, würden wir uns über einen Beitrag für unsere gemeinsame Zukunft freuen.",
     giftsCardTitle: "Geschenk per PayPal senden",
-    giftsCardDescription: "Ihr könnt euer Geschenk sicher über PayPal senden:",
+    giftsCardDescription: "Ihr könnt euer Geschenk ganz einfach und sicher über PayPal senden:",
     giftsButton: "Geschenk per PayPal senden",
-    giftsFooter: "Vielen Dank für eure Großzügigkeit! Wir freuen uns darauf, mit euch zu feiern.",
+    giftsFooter: "Vielen Dank für eure Großzügigkeit! Wir freuen uns darauf, mit euch zu feiern. Bitte beachtet, dass uns digitale Zahlungen lieber sind als physische Geschenke 😉",
     giftsSignature: "Alles Liebe, Christoph & Franzi",
 
     // Contact page
     contactTitle: "Fragen?",
     contactSubtitle: "Wir helfen euch gerne bei allen Fragen weiter!",
-    contactButton: "Kontaktiert uns!",
-    contactPromise: "Wir melden uns so schnell wie möglich bei euch",
+    contactButton: "Schreibt uns!",
+    contactPromise: "Wir melden uns so schnell wie möglich bei euch.",
 
     // RSVP Modal
     rsvpTitle: "Zusage",

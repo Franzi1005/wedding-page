@@ -19,7 +19,7 @@
 }
 
 .gifts-intro {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.8;
   color: rgb(135, 109, 109);
   margin-bottom: 40px;
@@ -45,7 +45,7 @@
 }
 
 .gift-card p {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.7;
   color: rgb(149, 121, 121);
   margin-bottom: 30px;
@@ -62,7 +62,7 @@
 }
 
 .gifts-footer {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.8;
   color: rgb(135, 109, 109);
   margin-top: 40px;
@@ -82,7 +82,7 @@
   }
 
   .gifts-intro {
-    font-size: 17px;
+    font-size: 19px;
     margin-bottom: 35px;
   }
 
@@ -95,11 +95,11 @@
   }
 
   .gift-card p {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .gifts-footer {
-    font-size: 17px;
+    font-size: 19px;
     margin-top: 35px;
   }
 }
@@ -110,7 +110,7 @@
   }
 
   .gifts-intro {
-    font-size: 16px;
+    font-size: 19px;
   }
 
   .gift-card {
@@ -122,10 +122,10 @@
   }
 
   .gift-card p {
-    font-size: 16px;
+    font-size: 19px;
   }
 
   .gifts-footer {
-    font-size: 16px;
+    font-size: 19px;
   }
 }

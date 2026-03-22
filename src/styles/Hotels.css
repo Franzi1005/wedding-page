@@ -16,7 +16,7 @@
 .hotels-intro {
   max-width: 700px;
   margin: 0 auto 50px;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.8;
   text-align: center;
   color: rgb(135, 109, 109);
@@ -86,8 +86,8 @@
   font-weight: 600;
 }
 
-.hotel-address {
-  font-size: 16px;
+.hotel-card .hotel-address {
+  font-size: 19px;
   line-height: 1.6;
   color: rgb(149, 121, 121);
   margin: 0 0 15px 0;
@@ -136,7 +136,7 @@
   }
 
   .hotels-intro {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.7;
     margin-bottom: 35px;
   }
@@ -153,8 +153,8 @@
     font-size: 20px;
   }
 
-  .hotel-address {
-    font-size: 16px;
+  .hotel-card .hotel-address {
+    font-size: 19px;
   }
 
   .hotel-card a {
@@ -173,7 +173,7 @@
   }
 
   .hotels-intro {
-    font-size: 16px;
+    font-size: 19px;
   }
 
   .map-section {
@@ -188,7 +188,7 @@
     font-size: 19px;
   }
 
-  .hotel-address {
-    font-size: 15px;
+  .hotel-card .hotel-address {
+    font-size: 19px;
   }
 }
