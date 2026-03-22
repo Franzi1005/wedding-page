@@ -87,8 +87,8 @@
 }
 
 .hotel-card .hotel-address {
-  font-size: 19px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 0.75;
   color: rgb(149, 121, 121);
   margin: 0 0 15px 0;
   padding: 0;
@@ -154,7 +154,7 @@
   }
 
   .hotel-card .hotel-address {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .hotel-card a {
@@ -189,6 +189,6 @@
   }
 
   .hotel-card .hotel-address {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
