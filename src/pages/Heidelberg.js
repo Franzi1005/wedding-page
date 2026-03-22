@@ -37,7 +37,7 @@ export default function Heidelberg() {
                 <br />
                 69117 Heidelberg
               </p>
-              <a href='https://www.brauhaus-vetter.de/en' target='_blank'>
+              <a href='https://www.brauhaus-vetter.de/en' target='_blank' rel='noopener noreferrer'>
                 Vetter's Alt Heidelberger Brauhaus
               </a>
             </div>
@@ -58,7 +58,7 @@ export default function Heidelberg() {
                 <br />
                 69115 Heidelberg
               </p>
-              <a href='https://cenneto.com/' target='_blank'>
+              <a href='https://cenneto.com/' target='_blank' rel='noopener noreferrer'>
                 Cenneto - Website
               </a>
             </div>
@@ -79,7 +79,7 @@ export default function Heidelberg() {
                 <br />
                 68723 Plankstadt
               </p>
-              <a href='https://bhukkaddhaba.eu/en/bhukkad-dhaba-en/' target='_blank'>
+              <a href='https://bhukkaddhaba.eu/en/bhukkad-dhaba-en/' target='_blank' rel='noopener noreferrer'>
                 Bhukkad Dhaba - Website
               </a>
             </div>
@@ -99,7 +99,7 @@ export default function Heidelberg() {
                 <br/>
                 69117 Heidelberg
               </p>
-              <a href='http://www.heidelberger-kulturbrauerei.de/' target='_blank'>
+              <a href='http://www.heidelberger-kulturbrauerei.de/' target='_blank' rel='noopener noreferrer'>
                 Kulturbrauerei Heidelberg - Website
               </a>
             </div>
@@ -119,7 +119,7 @@ export default function Heidelberg() {
                 <br/>
                 69117 Heidelberg
               </p>
-              <a href='https://bentbar.de/' target='_blank'>
+              <a href='https://bentbar.de/' target='_blank' rel='noopener noreferrer'>
                 Bent Bar - Heidelberg - Website
               </a>
             </div>
@@ -141,7 +141,7 @@ export default function Heidelberg() {
                 <br />
                 69126 Heidelberg
               </p>
-              <a href='https://taifs.de/' target='_blank'>Taif's</a>
+              <a href='https://taifs.de/' target='_blank' rel='noreferrer'>Taif's</a>
             </div>
           </div>
         </div>
@@ -160,7 +160,7 @@ export default function Heidelberg() {
             <div className='restaurant-info'>
               <h4>Heidelberger Schloss 🏰</h4>
               <p>Checkout <a href='https://www.komoot.com/de-de/smarttour/e729829737/wanderung-auf-dem-philosophenweg-in-heidelberg-wandern-in-den-staedten-des-suedens?ref=wdd' target= '_blank'><u>this hike</u></a> with the best view of the castle </p>
-              <p>Or for a shorter round check out <a href='https://www.komoot.com/de-de/smarttour/33488950?ref=wdd' target='_blank'><u>this route</u></a></p>
+              <p>Or for a shorter round check out <a href='https://www.komoot.com/de-de/smarttour/33488950?ref=wdd' target='_blank' rel='noreferrer'><u>this route</u></a></p>
               <a href='https://www.schloss-heidelberg.de/' target='_blank'>
                 Schloss Heidelberg
               </a>
@@ -194,9 +194,8 @@ export default function Heidelberg() {
             <div className='restaurant-info'>
               <h4>Heidelberger Altstadt 👨‍🦳🏙️</h4>
               <a href='https://www.visit-bw.com/en/article/heidelberg-old-town/ae169718-dc73-40a4-9ec1-3f74084d8ed2#/'
-                 target='_blank'>
+                 target='_blank' rel='noopener noreferrer'></a>
                 Altstadt Heidelberg
-              </a>
             </div>
           </div>
         </div>
