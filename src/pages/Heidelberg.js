@@ -159,9 +159,9 @@ export default function Heidelberg() {
                 referrerPolicy='no-referrer-when-downgrade'></iframe>
             <div className='restaurant-info'>
               <h4>Heidelberger Schloss 🏰</h4>
-              <p>Checkout <a href='https://www.komoot.com/de-de/smarttour/e729829737/wanderung-auf-dem-philosophenweg-in-heidelberg-wandern-in-den-staedten-des-suedens?ref=wdd' target= '_blank'><u>this hike</u></a> with the best view of the castle </p>
+              <p>Checkout <a href='https://www.komoot.com/de-de/smarttour/e729829737/wanderung-auf-dem-philosophenweg-in-heidelberg-wandern-in-den-staedten-des-suedens?ref=wdd' target= '_blank' rel='noreferrer'><u>this hike</u></a> with the best view of the castle </p>
               <p>Or for a shorter round check out <a href='https://www.komoot.com/de-de/smarttour/33488950?ref=wdd' target='_blank' rel='noreferrer'><u>this route</u></a></p>
-              <a href='https://www.schloss-heidelberg.de/' target='_blank'>
+              <a href='https://www.schloss-heidelberg.de/' target='_blank' rel='noreferrer'>
                 Schloss Heidelberg
               </a>
             </div>
@@ -176,9 +176,8 @@ export default function Heidelberg() {
                 referrerPolicy='no-referrer-when-downgrade'></iframe>
             <div className='restaurant-info'>
               <h4>Königstuhl ⛰️</h4>
-              <a href='https://www.bergbahn-heidelberg.de/koenigstuhl' target='_blank'></a>
-              <p>Checkout <a href='https://www.komoot.com/de-de/tour/1637870297' target= '_blank'><u>this hike</u></a> from the Altstadt </p>
-              <a href='https://www.bergbahn-heidelberg.de/koenigstuhl' target='_blank'>
+              <p>Checkout <a href='https://www.komoot.com/de-de/tour/1637870297' target= '_blank' rel='noreferrer'><u>this hike</u></a> from the Altstadt </p>
+              <a href='https://www.bergbahn-heidelberg.de/koenigstuhl' target='_blank' rel='noreferrer'>
                 Königstuhl
               </a>
             </div>
@@ -194,8 +193,9 @@ export default function Heidelberg() {
             <div className='restaurant-info'>
               <h4>Heidelberger Altstadt 👨‍🦳🏙️</h4>
               <a href='https://www.visit-bw.com/en/article/heidelberg-old-town/ae169718-dc73-40a4-9ec1-3f74084d8ed2#/'
-                 target='_blank' rel='noopener noreferrer'></a>
+                 target='_blank' rel='noopener noreferrer'>
                 Altstadt Heidelberg
+              </a>
             </div>
           </div>
         </div>
