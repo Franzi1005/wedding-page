@@ -68,12 +68,18 @@ export const translations = {
     rsvpEmailPlaceholder: "Email address",
     rsvpPlusOne: "I'm bringing a Plus One",
     rsvpPlusOnePlaceholder: "Plus One name",
+    rsvpPlusOneDietary: "Plus One's Dietary Preferences",
     rsvpDietaryPreferences: "Dietary Preferences",
     rsvpVegetarian: "Vegetarian",
     rsvpVegan: "Vegan",
     rsvpNoDietaryRestrictions: "No dietary restrictions",
     rsvpCommentsPlaceholder: "Food allergies or any other comments? Let us know here!",
     rsvpSubmit: "Send RSVP",
+    rsvpErrorName: "Please enter your name",
+    rsvpErrorEmailRequired: "Please enter your email address",
+    rsvpErrorEmailInvalid: "Please enter a valid email address",
+    rsvpErrorPlusOne: "Please enter your plus one's name",
+    rsvpErrorDietary: "Please select a dietary preference",
   },
   de: {
     // Home page
@@ -144,12 +150,18 @@ export const translations = {
     rsvpEmailPlaceholder: "E-Mail-Adresse",
     rsvpPlusOne: "Ich bringe eine Begleitung mit",
     rsvpPlusOnePlaceholder: "Name der Begleitung",
+    rsvpPlusOneDietary: "Essensvorlieben der Begleitung",
     rsvpDietaryPreferences: "Essensvorlieben",
     rsvpVegetarian: "Vegetarisch",
     rsvpVegan: "Vegan",
     rsvpNoDietaryRestrictions: "Keine Einschränkungen",
     rsvpCommentsPlaceholder: "Lebensmittelallergien oder sonstige Anmerkungen? Schreibt es uns hier!",
     rsvpSubmit: "Zusage senden",
+    rsvpErrorName: "Bitte gib deinen Namen ein",
+    rsvpErrorEmailRequired: "Bitte gib deine E-Mail-Adresse ein",
+    rsvpErrorEmailInvalid: "Bitte gib eine gültige E-Mail-Adresse ein",
+    rsvpErrorPlusOne: "Bitte gib den Namen deiner Begleitung ein",
+    rsvpErrorDietary: "Bitte wähle eine Essenspräferenz aus",
   }
 };
 

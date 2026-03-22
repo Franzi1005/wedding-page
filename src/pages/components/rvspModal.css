@@ -67,6 +67,30 @@
   gap: 20px;
 }
 
+.modalBackground .formField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modalBackground .errorMessage {
+  font-size: 14px;
+  color: #dc2626;
+  padding-left: 4px;
+  animation: slideDown 200ms ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .modalBackground h2 {
   text-align: center;
   font-size: 32px;
@@ -97,9 +121,16 @@
   font-size: 16px;
   color: rgb(135, 109, 109);
   background-color: rgba(255, 255, 255, 0.9);
-  transition: border-color 150ms ease-in-out;
+  transition: border-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
   width: 100%;
   box-sizing: border-box;
+}
+
+.modalBackground input[type='text'].error,
+.modalBackground input[type='email'].error,
+.modalBackground textarea.error {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -134,6 +165,14 @@
   flex-direction: column;
   gap: 12px;
   padding: 15px 0;
+  transition: border-color 150ms ease-in-out;
+}
+
+.modalBackground .dietarySection.error {
+  padding: 15px;
+  border: 2px solid #dc2626;
+  border-radius: 8px;
+  background-color: rgba(220, 38, 38, 0.05);
 }
 
 .modalBackground .dietaryLabel {
@@ -158,7 +197,8 @@
   cursor: pointer;
 }
 
-.modalBackground input[type='submit'] {
+.modalBackground input[type='submit'],
+.modalBackground button[type='submit'] {
   padding: 16px 22px;
   background-color: rgb(215, 195, 195);
   color: rgb(135, 109, 109);
@@ -168,20 +208,29 @@
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 150ms ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 200ms ease-in-out;
   margin-top: 10px;
   width: fit-content;
   align-self: center;
 }
 
 @media (max-width: 768px) {
-  .modalBackground input[type='submit'] {
+  .modalBackground input[type='submit'],
+  .modalBackground button[type='submit'] {
     font-size: 18px;
     padding: 14px 28px;
   }
 }
 
-.modalBackground input[type='submit']:hover {
+.modalBackground input[type='submit']:hover:not(:disabled),
+.modalBackground button[type='submit']:hover:not(:disabled) {
   background-color: rgb(176, 158, 158);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modalBackground button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
