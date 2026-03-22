@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './rvspModal.css';
 import { translations, getLanguage } from '../../i18n';
 
@@ -15,6 +16,7 @@ export default function RvspModal({ open, close }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const lang = getLanguage();
   const t = translations[lang];
+  const navigate = useNavigate();
 
   function handleChange(e) {
     e.preventDefault();
@@ -148,17 +150,22 @@ export default function RvspModal({ open, close }) {
         method: 'POST',
         body: formData,
         headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          close();
-        } else {
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            close();
+          } else {
+            setIsSubmitting(false);
+          }
+        })
+        .then(() => {
+          navigate('/contactUs');
+        })
+        .catch(() => {
           setIsSubmitting(false);
-        }
-      }).catch(() => {
-        setIsSubmitting(false);
-      });
+        });
     }
   }
   if (!open) return null;
@@ -169,7 +176,12 @@ export default function RvspModal({ open, close }) {
           <button onClick={close}>✕</button>
         </div>
         <h2>{t.rsvpTitle}</h2>
-        <form action='https://formspree.io/f/mnjgynoy' method='POST' onSubmit={handleSubmit} noValidate>
+        <form
+          action='https://formspree.io/f/mnjgynoy'
+          method='POST'
+          onSubmit={handleSubmit}
+          noValidate
+        >
           <div className='formField'>
             <input
               type='text'
@@ -184,7 +196,9 @@ export default function RvspModal({ open, close }) {
               <span className='errorMessage'>{errors.guestName}</span>
             )}
           </div>
-          <div className={`dietarySection ${errors.dietaryPreference && touched.dietaryPreference ? 'error' : ''}`}>
+          <div
+            className={`dietarySection ${errors.dietaryPreference && touched.dietaryPreference ? 'error' : ''}`}
+          >
             <label className='dietaryLabel'>{t.rsvpDietaryPreferences}</label>
             <div className='checkboxContainer'>
               <input
@@ -263,13 +277,17 @@ export default function RvspModal({ open, close }) {
                     }
                   }}
                   onBlur={() => handleBlur('plusOneName')}
-                  className={errors.plusOneName && touched.plusOneName ? 'error' : ''}
+                  className={
+                    errors.plusOneName && touched.plusOneName ? 'error' : ''
+                  }
                 />
                 {errors.plusOneName && touched.plusOneName && (
                   <span className='errorMessage'>{errors.plusOneName}</span>
                 )}
               </div>
-              <div className={`dietarySection ${errors.plusOneDietaryPreference && touched.plusOneDietaryPreference ? 'error' : ''}`}>
+              <div
+                className={`dietarySection ${errors.plusOneDietaryPreference && touched.plusOneDietaryPreference ? 'error' : ''}`}
+              >
                 <label className='dietaryLabel'>{t.rsvpPlusOneDietary}</label>
                 <div className='checkboxContainer'>
                   <input
@@ -281,11 +299,16 @@ export default function RvspModal({ open, close }) {
                     onChange={(e) => {
                       setPlusOneDietaryPreference(e.target.value);
                       if (touched.plusOneDietaryPreference) {
-                        validateField('plusOneDietaryPreference', e.target.value);
+                        validateField(
+                          'plusOneDietaryPreference',
+                          e.target.value,
+                        );
                       }
                     }}
                   />
-                  <label htmlFor='plusOneNone'>{t.rsvpNoDietaryRestrictions}</label>
+                  <label htmlFor='plusOneNone'>
+                    {t.rsvpNoDietaryRestrictions}
+                  </label>
                 </div>
                 <div className='checkboxContainer'>
                   <input
@@ -297,7 +320,10 @@ export default function RvspModal({ open, close }) {
                     onChange={(e) => {
                       setPlusOneDietaryPreference(e.target.value);
                       if (touched.plusOneDietaryPreference) {
-                        validateField('plusOneDietaryPreference', e.target.value);
+                        validateField(
+                          'plusOneDietaryPreference',
+                          e.target.value,
+                        );
                       }
                     }}
                   />
@@ -313,15 +339,21 @@ export default function RvspModal({ open, close }) {
                     onChange={(e) => {
                       setPlusOneDietaryPreference(e.target.value);
                       if (touched.plusOneDietaryPreference) {
-                        validateField('plusOneDietaryPreference', e.target.value);
+                        validateField(
+                          'plusOneDietaryPreference',
+                          e.target.value,
+                        );
                       }
                     }}
                   />
                   <label htmlFor='plusOneVegan'>{t.rsvpVegan}</label>
                 </div>
-                {errors.plusOneDietaryPreference && touched.plusOneDietaryPreference && (
-                  <span className='errorMessage'>{errors.plusOneDietaryPreference}</span>
-                )}
+                {errors.plusOneDietaryPreference &&
+                  touched.plusOneDietaryPreference && (
+                    <span className='errorMessage'>
+                      {errors.plusOneDietaryPreference}
+                    </span>
+                  )}
               </div>
             </>
           )}
