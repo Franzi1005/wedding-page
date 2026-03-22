@@ -66,6 +66,17 @@ export default function RvspModal({ open, close }) {
               <input
                 type='radio'
                 name='dietaryPreference'
+                id='none'
+                value='none'
+                checked={dietaryPreference === 'none'}
+                onChange={(e) => setDietaryPreference(e.target.value)}
+              />
+              <label htmlFor='none'>{t.rsvpNoDietaryRestrictions}</label>
+            </div>
+            <div className='checkboxContainer'>
+              <input
+                type='radio'
+                name='dietaryPreference'
                 id='vegetarian'
                 value='vegetarian'
                 checked={dietaryPreference === 'vegetarian'}

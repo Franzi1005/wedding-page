@@ -71,6 +71,7 @@ export const translations = {
     rsvpDietaryPreferences: "Dietary Preferences",
     rsvpVegetarian: "Vegetarian",
     rsvpVegan: "Vegan",
+    rsvpNoDietaryRestrictions: "No dietary restrictions",
     rsvpCommentsPlaceholder: "Food allergies or any other comments? Let us know here!",
     rsvpSubmit: "Send RSVP",
   },
@@ -146,6 +147,7 @@ export const translations = {
     rsvpDietaryPreferences: "Essensvorlieben",
     rsvpVegetarian: "Vegetarisch",
     rsvpVegan: "Vegan",
+    rsvpNoDietaryRestrictions: "Keine Einschränkungen",
     rsvpCommentsPlaceholder: "Lebensmittelallergien oder sonstige Anmerkungen? Schreibt es uns hier!",
     rsvpSubmit: "Zusage senden",
   }
