@@ -1,6 +1,10 @@
-import { render, screen, fireEvent, within } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
+import { render, screen, fireEvent } from '@testing-library/react';
 import Home from './Home';
+
+// Mock react-router-dom
+jest.mock('react-router-dom', () => ({
+  Link: ({ children, to }) => <a href={to}>{children}</a>,
+}));
 
 const mockNavigatorLanguage = (lang) => {
   Object.defineProperty(window.navigator, 'language', {
@@ -8,10 +12,6 @@ const mockNavigatorLanguage = (lang) => {
     configurable: true,
     value: lang,
   });
-};
-
-const renderWithRouter = (component) => {
-  return render(<BrowserRouter>{component}</BrowserRouter>);
 };
 
 describe('Home Component', () => {
