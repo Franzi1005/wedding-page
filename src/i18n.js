@@ -84,6 +84,7 @@ export const translations = {
     heidelbergClosing: "Wir hoffen, ihr genießt eure Zeit hier!",
     heidelbergSignature: "Alles Liebe, Christoph & Franzi",
     heidelbergRestaurants: "Die besten Bars und Restaurants in Heidelberg",
+    heidelbergWhatElseToDo: "Die besten Orte in Heidelberg",
 
     // Gifts page
     giftsTitle: "Hochzeitsgeschenke",
