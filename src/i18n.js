@@ -7,7 +7,7 @@ export const translations = {
       '📍Schilling Roofbar, Alte Glockengießerei 9, 69115 Heidelberg',
     homeDressCode: '👗👠 Dress Code: Cocktail / Semi-formal / Festive',
     homeInfo:
-      "❣️Please be advised that we won't send out invitation cards. All relevant information can be found on this page. Please make sure to RSVP above by",
+      "❣️Please be advised that we won't send out invitation cards. All relevant information can be found on this page and you will also find the photos from our wedding day here later. Please make sure to RSVP above by",
     homeRsvpDate: ' July 31st, 2026. ',
     homeUpdateUs: 'In case there are any changes kindly update us',
     homeViaEmail: ' via Email',
@@ -101,7 +101,7 @@ export const translations = {
       '📍Schilling Roofbar, Alte Glockengießerei 9, 69115 Heidelberg',
     homeDressCode: '👗👠 Dresscode: Cocktail / Semi-formal / Festlich',
     homeInfo:
-      '❣️Bitte beachtet, dass wir keine offiziellen Einladungskarten verschicken. Alle wichtigen Informationen findet ihr auf dieser Website. Bitte gebt uns oben bis zum ',
+      '❣️Bitte beachtet, dass wir keine offiziellen Einladungskarten verschicken. Alle wichtigen Informationen findet ihr auf dieser Website. Nach der Hochzeit werdet ihr hier auch die Fotogalerie finden. Bitte gebt uns oben bis zum ',
     homeRsvpDate: ' 31. July 2026 ',
     homeUpdateUs:
       'Bescheid, ob ihr kommt. Falls sich bei euch etwas ändert, informiert uns bitte',
