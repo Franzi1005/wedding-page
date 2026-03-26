@@ -25,7 +25,7 @@ export const translations = {
     // Hotels page
     hotelsTitle: 'Where to Stay',
     hotelsIntro:
-      "In case you need a hotel, below you can find some hotels we'd recommend close enough to the venue. We hope you enjoy your time in Heidelberg!.",
+      "In case you need a hotel, below you can find some hotels we'd recommend close enough to the venue. We hope you enjoy your time in Heidelberg!",
     weddingVenueBadge: '💒 Wedding Venue',
     viewWebsite: 'View Website →',
 
